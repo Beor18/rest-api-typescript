@@ -4,7 +4,9 @@
   "description": "TypeORM Nodejs Api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\""
   },
   "author": "Fernando Lopez",
   "license": "ISC",
@@ -21,6 +23,7 @@
     "@types/express": "^4.17.7",
     "@types/morgan": "^1.9.1",
     "@types/node": "^14.0.27",
+    "tsc-watch": "^4.2.9",
     "typescript": "^3.9.7"
   }
 }
